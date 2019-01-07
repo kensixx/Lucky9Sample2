@@ -6,6 +6,10 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Player {
     private List<Card> cards;
 
+    // will determine if player is computer or not.
+    // not implemented in constructor && methods yet. =)
+    private boolean isComputer; // WOW THANKS BOSS IAN JASPER CABALEN
+
     public Player() {
         this.cards = new ArrayList<Card>();
     }
@@ -27,6 +31,8 @@ public class Player {
     }
 
     public void displayYourCards() {
+
+        System.out.println("Your cards are: ");
         for (Card card : cards) {
             System.out.println(card);
         }
